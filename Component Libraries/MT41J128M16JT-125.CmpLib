@@ -1,0 +1,284 @@
+<?xml version="1.0"?>
+<TComponentSet id="0" CurrentRevColumnWidth="100" NameColumnWidth="300" NextRevColumnWidth="100">
+  <VaultGUID>B7D15EC3-160A-466F-A46C-7801FE6295A7</VaultGUID>
+  <VaultName>Altium Content Vault</VaultName>
+  <RequiredParameters>
+    <TRequiredParameter id="1" ColumnWidth="100">
+      <HRID>CL</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="2" ColumnWidth="100">
+      <HRID>Clock Rate</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="3" ColumnWidth="100">
+      <HRID>Comment</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="4" ColumnWidth="100">
+      <HRID>ComponentLink1Description</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="5" ColumnWidth="100">
+      <HRID>ComponentLink1URL</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="6" ColumnWidth="100">
+      <HRID>ComponentLink2Description</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="7" ColumnWidth="100">
+      <HRID>ComponentLink2URL</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="8" ColumnWidth="100">
+      <HRID>ComponentLink3Description</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="9" ColumnWidth="100">
+      <HRID>ComponentLink3URL</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="10" ColumnWidth="100">
+      <HRID>Cycle Time</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="11" ColumnWidth="100">
+      <HRID>Data Rate</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="12" ColumnWidth="100">
+      <HRID>DatasheetVersion</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="13" ColumnWidth="100">
+      <HRID>Density</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="14" ColumnWidth="100">
+      <HRID>Depth</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="15" ColumnWidth="100">
+      <HRID>Description</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="16" ColumnWidth="100">
+      <HRID>Manufacturer</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="17" ColumnWidth="100">
+      <HRID>Mounting Technology</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="18" ColumnWidth="100">
+      <HRID>Op. Temp.</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="19" ColumnWidth="100">
+      <HRID>Package</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="20" ColumnWidth="100">
+      <HRID>PackageDescription</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="21" ColumnWidth="100">
+      <HRID>PackageReference</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="22" ColumnWidth="100">
+      <HRID>PackageVersion</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="23" ColumnWidth="100">
+      <HRID>PartNumber</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="24" ColumnWidth="100">
+      <HRID>Pin Count</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="25" ColumnWidth="100">
+      <HRID>RoHS</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="26" ColumnWidth="100">
+      <HRID>Voltage</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+    <TRequiredParameter id="27" ColumnWidth="100">
+      <HRID>Width</HRID>
+      <Visible>true</Visible>
+    </TRequiredParameter>
+  </RequiredParameters>
+  <RequiredModels>
+    <TRequiredModel id="28" ColumnWidth="100">
+      <HRID>PCBLIB</HRID>
+      <Visible>true</Visible>
+      <ModelKind>PCBLIB</ModelKind>
+    </TRequiredModel>
+    <TRequiredModel id="29" ColumnWidth="100">
+      <HRID>SCHLIB</HRID>
+      <Visible>true</Visible>
+      <ModelKind>SCHLIB</ModelKind>
+    </TRequiredModel>
+  </RequiredModels>
+  <ModelLinks>
+    <TModelLink id="30">
+      <HRID>PCC-0153-00039-1</HRID>
+      <VaultGUID>B7D15EC3-160A-466F-A46C-7801FE6295A7</VaultGUID>
+      <ItemGUID>0C14A9F3-E6B8-4FB8-9C77-CAC09F8BBD60</ItemGUID>
+      <ModelKind>PCBLIB</ModelKind>
+      <RevisionGUID>7E251F65-13BB-4B19-91A2-5079A476CA3C</RevisionGUID>
+    </TModelLink>
+    <TModelLink id="31">
+      <HRID>SYM-0121-00002-1</HRID>
+      <VaultGUID>B7D15EC3-160A-466F-A46C-7801FE6295A7</VaultGUID>
+      <ItemGUID>01A9F381-B2E0-42D0-9E57-2CA2B922545E</ItemGUID>
+      <ModelKind>SCHLIB</ModelKind>
+      <RevisionGUID>A074034E-E82F-4224-81F3-80A79467A1EC</RevisionGUID>
+    </TModelLink>
+  </ModelLinks>
+  <PartChoiceListLinks StateIndex="2">
+    <ComponentSet href="#0"/>
+  </PartChoiceListLinks>
+  <TopGroup id="32" StateIndex="2" Collapsed="false">
+    <GUID>BB3739FE-6509-4B82-A94C-9F709C1BECB4</GUID>
+    <Parameters/>
+    <ModelChoices/>
+    <ComponentSet href="#0"/>
+    <Groups/>
+    <ComponentDefinitions>
+      <TComponentDefinition StateIndex="2">
+        <HRID>CMP-0355-00064</HRID>
+        <GUID>9DB54B50-A580-4BB0-A59D-E2855DA3F960</GUID>
+        <ParentGroup href="#32"/>
+        <Parameters>
+          <TParameter>
+            <RequiredParameter href="#3"/>
+            <Value>MT41J128M16JT-125</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#15"/>
+            <Value>2Gb DDR3-1600 SDRAM, 128Mb x 16, 1.25ns, 1.5V, 0 to 95 degC, 96-Ball FBGA, Pb-Free</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#16"/>
+            <Value>Micron</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#24"/>
+            <Value>96-ball </Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#13"/>
+            <Value>2Gb </Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#6"/>
+            <Value>Datasheet</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#2"/>
+            <Value>800 MHz </Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#23"/>
+            <Value>MT41J128M16JT-125</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#19"/>
+            <Value>FBGA </Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#9"/>
+            <Value>http://www.micron.com/~/media/Documents/Products/Data%20Sheet/DRAM/2Gb_DDR3_SDRAM.pdf</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#14"/>
+            <Value>128Mb </Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#5"/>
+            <Value>http://www.micron.com/</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#18"/>
+            <Value>0C to +95C </Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#26"/>
+            <Value>1.5V </Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#8"/>
+            <Value>Package Specification</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#1"/>
+            <Value>CL = 11 </Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#20"/>
+            <Value>96-Ball Fine-Pitch Ball Grid Array, 14 x 8 mm, Pitch 0.8 mm</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#12"/>
+            <Value>Rev. P</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#17"/>
+            <Value>Surface Mount</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#22"/>
+            <Value>Rev.G</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#7"/>
+            <Value>http://www.micron.com/~/media/Documents/Products/Data%20Sheet/DRAM/2Gb_DDR3_SDRAM.pdf</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#21"/>
+            <Value>MICT-JT-96</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#27"/>
+            <Value>x16 </Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#4"/>
+            <Value>Manufacturer URL</Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#10"/>
+            <Value>1.25ns </Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#25"/>
+            <Value>Yes </Value>
+          </TParameter>
+          <TParameter>
+            <RequiredParameter href="#11"/>
+            <Value>DDR3-1600 </Value>
+          </TParameter>
+        </Parameters>
+        <ModelChoices>
+          <TModelChoice>
+            <RequiredModel href="#28"/>
+            <ModelLink href="#30"/>
+          </TModelChoice>
+          <TModelChoice>
+            <RequiredModel href="#29"/>
+            <ModelLink href="#31"/>
+          </TModelChoice>
+        </ModelChoices>
+        <ItemHRID>CMP-0355-00064</ItemHRID>
+        <RevisionGUID>D36FE513-29C3-43F4-A72E-B325D321F5D3</RevisionGUID>
+        <RevisionId>1</RevisionId>
+      </TComponentDefinition>
+    </ComponentDefinitions>
+  </TopGroup>
+  <ShowReleaseState>false</ShowReleaseState>
+</TComponentSet>
