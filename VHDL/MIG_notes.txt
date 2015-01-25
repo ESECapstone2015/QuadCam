@@ -1,0 +1,134 @@
+Memory Interface Generator Notes
+-------------------------------------
+
+Compatibility
+
+	The x16 and x25 are pin-compatible with the x9. The MIG will generate a pinout that is compatible with all these parts.
+
+	
+Controller Options
+
+	The MCB in Bank 3 has fewer multi-purpose IO pins and is therefore the preferred location for designs with a single controller.
+
+	Extended MCB performance range only applies to DDR2. See DS612 table 2 and 24 for more information.
+
+
+Memory Options
+
+	Output Driver Impedance Control: RZQ/6
+		To calibrate the output driver impedance, an external precision resistor (RZQ) is connected between the ZQ ball and VSSQ. The value of the resistor must be 240 ohm +/- 1 percent.
+		
+	RTT (nominal) - ODT: RZQ/4
+		The ODT feature is designed to improve signal integrity of the memory channel by enabling the DDR3 SDRAM controller to independantly turn on/off ODT.
+		
+	Auto Self Refresh: Enabled
+		When ASR is disabled, the self-refresh mode's refresh rate is assumed to be at the normal 85C limit (referred to as 1X refresh rate). Enabling ASR assumed (sic?) the DRAM self refresh rate is changed automatically from 1X to 2X when the case temperature exceeds 85C.
+		
+	High Temperature Self Refresh Rate: Normal (cannot be changed)
+		In the Normal mode, SRT requires the user to ensure the DRAM never exceeds a Tc of 85C while in self refresh mode unless the user enables ASR. In Extended mode, the DRAM self refresh is changed internally from 1X to 2X, regardless of the case temperature.
+		
+
+Multi-port Configuration
+
+	Four 32-bit bi-directional ports
+	
+	Memory Address Mapping: Row-Bank-Column
+		
+		
+Arbitration
+
+	Round Robin
+	
+	
+FPGQ Options
+
+	Memory Interface Pin Termination: Calibrated Input Termination
+		Provides calibrated on-die termination resistors. Calibration requires two extra pins to be added to the interface: RZQ and ZIO. An external resistor with a value 2x trace impedance needs to be connected from RZQ pin to ground, and the ZIO pins (sic?) need to be left unconnected. These additional pins and their locations will be listed in the generated UCF constraints file.
+		
+	Select RZQ pin location: M4	
+		This pin is required for all MCB designs. If Calibrated Input Termination is used, this pin must have a resistor of value 2R to ground, where R is the desired input termination value. Otherwise, it may be left as a no-connect (NC).
+	
+	Select ZIO pin location: M5
+		ZIO must be placed on a bonded pin in the package, but there should be no board trace connected to this pin (no-connect).
+
+	Debug Signals for Memory Controller: Enabled
+		This allows the debug signals to be monitored on the ChipScope tool. Selecting this option will port map the debug signals to the ChipScope modules in the design top module. Debug is supported only for one controller.
+		
+	System Clock: Differential	
+		
+Summary
+
+	CORE Generator Options:
+	   Target Device              : xc6slx9-ftg256
+	   Speed Grade                : -2
+	   HDL                        : vhdl
+	   Synthesis Tool             : Foundation_ISE
+
+	If any of the above options are incorrect, please click on "Cancel", change the Project Options in XPS, and re-run MIG from the MPMC GUI
+
+	MIG Output Options:
+	   Component Name             : cpt_ddr2_ctrl
+	   No of Controllers          : 1
+	   
+
+		
+	/*******************************************************/
+	/*                  Controller 3                       */
+	/*******************************************************/
+	Controller Options : 
+	   Memory                  : DDR3_SDRAM
+	   Interface               : NATIVE
+	   Design Clock Frequency  : 3000 ps (333.33 MHz)
+	   Memory Type             : Components
+	   Memory Part             : MT41J128M16XX-125
+	   Equivalent Part(s)      : MT41J128M16HA-125
+	   Row Address             : 14
+	   Column Address          : 10
+	   Bank Address            : 3
+	   Data Mask               : enabled
+
+	Memory Options :
+	   Burst Length                       : 8(00)
+	   CAS Latency                        : 6
+	   TDQS enable                        : Disabled
+	   DLL Enable                         : Enable
+	   Write Leveling Enable              : Disabled
+	   Output Drive Strength              : RZQ/6
+	   Additive Latency (AL)              : 0
+	   RTT (nominal) - ODT                : RZQ/4       
+	   Auto Self Refresh                  : Enabled
+	   CAS write latency                  : 5
+	   Partial-Array Self Refresh         : Full Array
+	   High Temparature Self Refresh Rate : Normal
+
+	User Interface Parameters :
+	   Configuration Type     : Four 32-bit bi-directional ports
+	   Ports Selected         : Port0, Port1, Port2, Port3
+	   Memory Address Mapping : ROW_BANK_COLUMN
+
+	   Arbitration Algorithm  : Round Robin
+
+	   Arbitration            : 
+		  Time Slot0 : 0123
+		  Time Slot1 : 1230
+		  Time Slot2 : 2301
+		  Time Slot3 : 3012
+		  Time Slot4 : 0123
+		  Time Slot5 : 1230
+		  Time Slot6 : 2301
+		  Time Slot7 : 3012
+		  Time Slot8 : 0123
+		  Time Slot9 : 1230
+		  Time Slot10: 2301
+		  Time Slot11: 3012
+
+	FPGA Options :
+	   Class for Address and Control       : II
+	   Class for Data                      : II
+	   Memory Interface Pin Termination    : CALIB_TERM
+	   DQ/DQS                              : 25 Ohms
+	   Bypass Calibration                  : enabled
+	   Debug Signals for Memory Controller : Enable
+	   Input Clock Type                    : Differential 
+		
+		
